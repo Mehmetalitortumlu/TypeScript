@@ -6,9 +6,9 @@
 
 // Neden typscript çünkü tip sistemi ekleyerek javascriptteki dinamik tip problemlerinin önüne geçmek ve gelmesi planlanan js özelliklerine daha erken erişebilmek.
 
-// Değişkenin tipini biz belirlemiyoruz değişkenin tipini değeri neyse o belirliyor. mesala let a= "mehmet" olursa string a=2 olursa number a=true olursa boelan dinamik bir tipte olduğunu görüyoruz. Bu hem avantaj sağlar hem problem typscript burda tip tanımı yaparak bu problemlerin önüne geçmemizi sağlar.
+// Değişkenin tipini biz belirlemiyoruz değişkenin tipini değeri neyse o belirliyor. mesala let a= "mehmet" olursa string, a=2 olursa number, a=true olursa boelan dinamik bir tipte olduğunu görüyoruz. Bu hem avantaj sağlar hem problem typscript burda tip tanımı yaparak bu problemlerin önüne geçmemizi sağlar.
 
-//  Biz bu şekilde verilerin kontrolünü gerçekleştirebiliyoruz. Ancak typscipt kullanıp biz veri tipinin string olduğunu belirleseydik compile aşamasında biz hata alıp düzeltebilir ve bu kadar işlem yapmayabilirdik. 
+//  Biz bu şekilde verilerin kontrolünü gerçekleştirebiliyoruz. Ancak typscipt kullanıp biz veri tipinin string olduğunu belirleseydik compile aşamasında biz hata alıp düzeltebilir ve bu kadar işlem yapmayabilirdik.  
 
 /* 
 const reversedText = text => {
@@ -37,7 +37,7 @@ function getProduct(id) {
     }
 };
 
-const product = getProduct(1)
+const product = getProduct(1);
 // Burada biz olmayan bir değere ulaştığımız zaman javascript sanki varmış gibi davraniyor ve hata vermiyor geriye undifined dönüyor dolayısıyla typscripte bunun önüne geçilebiliyor. Olmayan şeylere ulaşma kısmında typscripte daha doğru sonuçlar verir. Bir bizim yukarda oluşturdugumuz fonksiyonda id tipi şu name tipi şu ve price tipi şu onun haricinde hiç bir şey döndürmüyor yani biz bu fonksiyonuun bize ne döndürceğini bilyior ona göre hareket ediyoruz.
 console.log(product.test);
 
